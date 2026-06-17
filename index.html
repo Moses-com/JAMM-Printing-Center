@@ -133,16 +133,27 @@ nav a:hover {
 
 <body>
 
-<header>
-    <h1>JAMM Printing Center</h1>
-    <p>Professional Printing, Photocopying & Document Services</p>
-    <p>Opposite Ayii University, Munuki Maisaba, Juba - South Sudan</p>
-</header>
 
+    <header class="hero">
+    <div class="hero-content">
+        <h1>JAMM Printing Center</h1>
+        <p>Professional Printing, Photocopying, Research & Document Services in Juba</p>
+
+        <a class="btn" href="#contact">Contact Us</a>
+        <a class="btn btn-secondary" href="#order">Place an Order</a>
+    </div>
+    </header>
+    
 <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
+    <a href="#order">Order Now</a>
+    <a class="btn"
+href="https://wa.me/211920337401?text=Hello%20JAMM%20Printing%20Center,%20I%20would%20like%20to%20place%20an%20order."
+target="_blank">
+Order via WhatsApp
+    </a>
 </nav>
 
 <section id="about">
@@ -159,21 +170,70 @@ nav a:hover {
 
 <section id="services">
     <h2>Our Services</h2>
+
     <div class="services">
 
-        <div class="service-box">Printing (Black & Color)</div>
-        <div class="service-box">Photocopying Services</div>
-        <div class="service-box">Document Typing</div>
-        <div class="service-box">CV & Cover Letter Writing</div>
-        <div class="service-box">Research Assistance</div>
-        <div class="service-box">PowerPoint Presentations</div>
-        <div class="service-box">Binding & Laminating</div>
-        <div class="service-box">Passport Photos</div>
-        <div class="service-box">Scanning & PDF Conversion</div>
+        <div class="service-box">
+            <h3>🖨 Printing</h3>
+            <p>Black & White and Color Printing</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📄 Photocopying</h3>
+            <p>Fast and Affordable Copy Services</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📊 PowerPoint</h3>
+            <p>Professional Presentation Design</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📚 Research Support</h3>
+            <p>Academic and Business Research Assistance</p>
+        </div>
 
     </div>
 </section>
 
+    <section id="order">
+    <div class="card">
+        <h2>Place an Order</h2>
+
+        <form action="#" method="post">
+
+            <label>Full Name</label><br>
+            <input type="text" name="name" required style="width:100%;padding:10px;"><br><br>
+
+            <label>Phone Number</label><br>
+            <input type="tel" name="phone" required style="width:100%;padding:10px;"><br><br>
+
+            <label>Email Address</label><br>
+            <input type="email" name="email" style="width:100%;padding:10px;"><br><br>
+
+            <label>Service Needed</label><br>
+            <select name="service" style="width:100%;padding:10px;">
+                <option>Printing</option>
+                <option>Photocopying</option>
+                <option>Document Typing</option>
+                <option>CV Writing</option>
+                <option>Research Assistance</option>
+                <option>PowerPoint Presentation</option>
+                <option>Binding & Laminating</option>
+                <option>Passport Photos</option>
+            </select><br><br>
+
+            <label>Order Details</label><br>
+            <textarea name="details" rows="5"
+            style="width:100%;padding:10px;"
+            placeholder="Describe your order here"></textarea><br><br>
+
+            <button class="btn" type="submit">Submit Order</button>
+
+        </form>
+    </div>
+    </section>
+    
 <section id="contact">
     <div class="card">
         <h2>Contact Us</h2>
